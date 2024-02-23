@@ -1220,6 +1220,8 @@ button {
   }
 }
 .procedure__content {
+  max-width: 1200px;
+  width: 100%;
   padding: 40px 30px;
   background-color: #EAEEF1;
   border-radius: 16px;
