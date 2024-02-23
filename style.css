@@ -1055,6 +1055,11 @@ button {
   padding: 16px 70px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 450px) {
+  .consequences__content-block {
+    padding: 16px 30px;
+  }
+}
 .consequences__content-block--title {
   font-size: 20px;
   font-weight: 900;
