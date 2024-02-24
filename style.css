@@ -838,67 +838,22 @@ button {
   }
 }
 .simplified-system__content {
-  max-width: 1200px;
-  width: 100%;
   margin-top: 30px;
-  padding: 40px 70px;
-  background-color: #EAEEF1;
-  border-radius: 30px;
-}
-.simplified-system__content_title {
-  background-color: white;
-  border-radius: 100px;
-  font-size: 22px;
-  padding: 10px 25px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #CBA55A;
-}
-@media screen and (max-width: 991px) {
-  .simplified-system__content_title {
-    font-size: 16px;
-  }
-}
-.simplified-system__content_blocks {
-  margin-top: 50px;
-  margin-bottom: 23px;
-  display: flex;
-  gap: 17px;
-}
-@media screen and (max-width: 991px) {
-  .simplified-system__content_blocks {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.simplified-system__content_blocks--item {
-  flex: 1 1 0px;
-  max-width: 249px;
+  background-image: url(./images/procedure.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 716px;
+  max-width: 400px;
   width: 100%;
-  padding: 18px 13px;
-  display: flex;
-  align-items: center;
-  background-color: #CBA55A;
-  color: white;
-  font-size: 17px;
-  text-align: center;
-  border-radius: 20px;
 }
-.simplified-system__content_underblock {
-  padding: 17px 70px;
-  border-radius: 20px;
-  background-color: #fff;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-@media screen and (max-width: 991px) {
-  .simplified-system__content_underblock {
-    padding: 15px 11px;
-    font-size: 15px;
-    line-height: 19px;
+@media screen and (min-width: 1200px) {
+  .simplified-system__content {
+    background-image: url(./images/procedure-desktop.svg);
+    background-repeat: no-repeat;
+    /* background-position: center 30%; */
+    background-size: auto;
+    max-width: 1200px;
+    min-height: 404px;
   }
 }
 
@@ -2140,7 +2095,7 @@ button {
 }
 
 .jobs {
-  background-image: url("./images/jobs.svg");
+  background-image: url("./images/jobs2.svg");
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: auto;
@@ -2158,9 +2113,9 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .jobs {
-    background-image: url("./images/jobs-desktop.svg");
+    background-image: url("./images/jobs-desktop2.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    /* background-position: center center; */
     background-size: contain;
     height: 900px;
     display: grid;
