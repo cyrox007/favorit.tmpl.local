@@ -1005,7 +1005,7 @@ button {
 }
 
 .consequences {
-  padding: 20px;
+  padding: 40px 20px;
   background-image: url("./images/accordion-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1025,10 +1025,11 @@ button {
   text-align: center;
 }
 .consequences__subtitle {
+  margin-top: 5px;
   color: #fff;
   font-size: 20px;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: center;
@@ -1040,7 +1041,7 @@ button {
   width: 100%;
   border-radius: 20px;
   padding: 16px 70px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 450px) {
   .consequences__content-block {
@@ -1049,17 +1050,18 @@ button {
 }
 .consequences__content-block--title {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
 }
 .consequences__content-block_list {
   margin-left: 10px;
+  margin-top: 8px;
   list-style-type: none;
   font-family: Mulish;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
@@ -1078,7 +1080,7 @@ button {
   color: white;
   font-size: 20px;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 25px;
   letter-spacing: 0em;
 }
