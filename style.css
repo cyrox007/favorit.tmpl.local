@@ -837,6 +837,11 @@ button {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 1200px) {
+  .simplified-system__subtitle {
+    max-width: 313px;
+  }
+}
 .simplified-system__content {
   margin-top: 30px;
   background-image: url(./images/procedure.svg);
@@ -863,6 +868,90 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* &__content {
+      overflow: hidden;
+      position: relative;
+      z-index: 0;
+      &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-image: url(./images/settlement-agreement.svg);
+          background-repeat: no-repeat;
+          background-size: auto;
+          z-index: 0;
+          @media screen and (max-width: 991px) {
+              background-size: auto;
+          }
+      }
+      max-width: 1200px;
+      width: 100%;
+      margin-top: 30px;
+      padding: 40px 70px;
+      display: flex;
+      align-items: center;
+      background-color: #EAEEF1;
+      border-radius: 30px;
+
+      @media screen and (max-width: 991px) {
+          padding: 40px 18px 20px 16px;
+          flex-direction: column;
+      }
+      &_title {
+          z-index: 1;
+          max-width: 369px;
+          margin-right: 40px;
+          padding: 40px 10px;
+          border-radius: 20px;
+          background-color: white;
+          text-align: center;
+          font-family: Mulish;
+
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: center;
+          @media screen and (max-width: 1106px) {
+              font-size: 19px;
+          }
+          @media screen and (max-width: 1083px) {
+              font-size: 18px;
+          }
+          @media screen and (max-width: 991px) {
+              margin-bottom: 75px;
+
+              font-size: 18px;
+              line-height: 23px;
+          }
+          b {
+              font-size: 20px;
+              font-weight: 800;
+              line-height: 25px;
+              letter-spacing: 0em;
+              text-align: center;
+              @media screen and (max-width: 991px) {
+                  margin-bottom: 60px;
+
+                  font-size: 18px;
+                  line-height: 23px;
+              }
+          }
+
+      }
+      &_description {
+          z-index: 1;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: left;
+
+      }
+  } */
 }
 .settlement-agreement__header {
   padding-inline: 23px;
@@ -890,86 +979,29 @@ button {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 1200px) {
+  .settlement-agreement__subtitle {
+    max-width: 300px;
+  }
+}
 .settlement-agreement__content {
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-  max-width: 1200px;
-  width: 100%;
-  margin-top: 30px;
-  padding: 40px 70px;
-  display: flex;
-  align-items: center;
-  background-color: #EAEEF1;
-  border-radius: 30px;
-}
-.settlement-agreement__content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url(./images/settlement-agreement.png);
+  margin-top: 20px;
+  background-image: url(./images/settlement-agreement-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 45% auto;
-  z-index: 0;
+  min-height: 348px;
+  max-width: 400px;
+  width: 100%;
+  background-size: contain;
 }
-@media screen and (max-width: 991px) {
-  .settlement-agreement__content::before {
-    background-size: auto;
-  }
-}
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 1200px) {
   .settlement-agreement__content {
-    padding: 40px 18px 20px 16px;
-    flex-direction: column;
+    margin-top: 30px;
+    background-image: url(./images/settlement-agreement-desktop.svg);
+    background-repeat: no-repeat;
+    min-height: 281px;
+    max-width: 1200px;
+    width: 100%;
   }
-}
-.settlement-agreement__content_title {
-  z-index: 1;
-  max-width: 369px;
-  margin-right: 40px;
-  padding: 40px 10px;
-  border-radius: 20px;
-  background-color: white;
-  text-align: center;
-  font-family: Mulish;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-@media screen and (max-width: 991px) {
-  .settlement-agreement__content_title {
-    margin-bottom: 60px;
-    font-size: 18px;
-    line-height: 23px;
-  }
-}
-.settlement-agreement__content_title b {
-  font-family: Mulish;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-@media screen and (max-width: 991px) {
-  .settlement-agreement__content_title b {
-    margin-bottom: 60px;
-    font-size: 18px;
-    line-height: 23px;
-  }
-}
-.settlement-agreement__content_description {
-  z-index: 1;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .consequences {
@@ -1094,7 +1126,7 @@ button {
 }
 .faq__list_item--title {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
@@ -1105,7 +1137,7 @@ button {
 @media screen and (max-width: 991px) {
   .faq__list_item--title {
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 19px;
   }
 }
@@ -1141,8 +1173,8 @@ button {
   position: absolute;
   top: 0;
   right: 30px;
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   line-height: 63px;
   letter-spacing: 0em;
   text-align: center;
@@ -1177,6 +1209,7 @@ button {
 .procedure__content {
   max-width: 1200px;
   width: 100%;
+  margin-top: 30px;
   padding: 40px 30px;
   background-color: #EAEEF1;
   border-radius: 16px;
@@ -2327,7 +2360,12 @@ button {
     z-index: 10;
   }
   .statement__column {
-    justify-content: flex-start;
+    /* -webkit-box-pack: start;
+
+        -ms-flex-pack: start;
+
+            justify-content: flex-start; */
+    justify-content: center;
   }
   .statement {
     background-image: url("./images/statement-gradient-2.png");
