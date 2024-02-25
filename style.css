@@ -1043,7 +1043,7 @@ button {
   padding: 16px 70px;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .consequences__content-block {
     padding: 16px 30px;
   }
